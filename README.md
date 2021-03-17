@@ -19,7 +19,16 @@ fi
 ```
 
 # Question 3
-**Written Documentation about Q1**: 
+**3a**. <i> Code overview: curl -O filename URL to Wünschiers book <i>
+
+The curl command was used to since it can download files from a remote location, like a webpage!
+Additionally, I opted to use -O (vs -o) as it automatically saved case-cp.sh in my current working directory.
+```
+curl -O case-cp.sh https://link-springer-com.simsrad.net.ocs.mq.edu.au/book/10.1007%2F978-3-642-34749-8
+
+```
+
+**3b**. 
 ```
 
 ```
