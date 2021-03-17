@@ -3,6 +3,11 @@ This is my submissions for BUSA8090 Assignment 1.
 # Question 1
 **Written Documentation about Q1**:
 ```
+#!/bin/bash
+echo "Searching for oldest files"
+echo "Performing task"
+oldest_file=$(find "foo","goo","hoo" | sort | head -n 1 | cut -d' ' -f2-)
+echo "The oldest file is $oldest_file"
 
 ```
 
@@ -29,7 +34,23 @@ curl -O case-cp.sh https://link-springer-com.simsrad.net.ocs.mq.edu.au/book/10.1
 ```
 
 **3b**. 
+**Written Documentation about Q2**: Reference to Recording 4 of Lecture 2, slides 30-31. Reference to 10.11.2 Time Signal in Computational Biology.
 ```
+#!/bin/bash
+time=$(date +%M)
+count=0
+let count=count+1;
 
+if [[ $minute -gt 0 && $minute -lt 20 ]];
+then
+        echo "No Chime"
+elif [[ $minute -gt 20 && $minute -lt 40 ]];
+then
+        echo -e "\a"
+elif [[ $minute -gt 40 && $minute -lt 60 ]];
+then
+        echo -e "\a\a"
+        sleep 1
+fi
 ```
 ### -- END OF SUBMISSION --
