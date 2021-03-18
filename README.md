@@ -1,5 +1,5 @@
 # BUSA8090_Assignment1
-This is my submissions for BUSA8090 Assignment 1.
+This is my submission for BUSA8090 Assignment 1.
 
 My GitHub link: https://github.com/startup-101/BUSA8090_Assignment1
 
