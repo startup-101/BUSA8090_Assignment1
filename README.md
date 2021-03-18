@@ -1,30 +1,15 @@
 # BUSA8090_Assignment1
 This is my submissions for BUSA8090 Assignment 1.
-My GitHub link: 
+
+My GitHub link: https://github.com/startup-101/BUSA8090_Assignment1
+
 # Question 1
-**Written Documentation about Q1**:
-
-OLD
+**Written Documentation about Q1**: Reference to Recording 2 of Lecture 2, topic position parameters (slide 14) + Recording 4 of Lecture 2, slide 6.
 ```
 #!/bin/bash
-echo "Searching for oldest files"
-echo "Performing task"
-oldest_file=$(find "foo","goo","hoo" | sort | head -n 1 | cut -d' ' -f2-)
-echo "The oldest file is $oldest_file"
-
-```
-New v2
-#!/bin/bash
-echo "Searching for oldest files"
-for arg in $oldest
-do
-        oldest=$foo $goo $hoo
-        if [[ $arg -ot $oldest ]]
-        then
-                oldest=$arg
-        fi
-done
-echo "The oldest file is: ${oldest}"
+echo "Searching for oldest file"
+oldest_file=$(find $HOME -type f -name "*.foo" -o -name "*.goo"  -o -name "*.hoo" -exec grep "$oldest" {} \;)
+echo "The oldest file is: $oldest_file"
 ```
 
 # Question 2
@@ -46,7 +31,6 @@ The curl command was used to since it can download files from a remote location,
 Additionally, I opted to use -O (vs -o) as it automatically saved case-cp.sh in my current working directory.
 ```
 curl -O case-cp.sh https://link-springer-com.simsrad.net.ocs.mq.edu.au/book/10.1007%2F978-3-642-34749-8
-
 ```
 
 **3b**. 
