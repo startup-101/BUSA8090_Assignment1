@@ -2,12 +2,41 @@
 This is my submissions for BUSA8090 Assignment 1.
 # Question 1
 **Written Documentation about Q1**:
+
+OLD
 ```
 #!/bin/bash
 echo "Searching for oldest files"
 echo "Performing task"
 oldest_file=$(find "foo","goo","hoo" | sort | head -n 1 | cut -d' ' -f2-)
 echo "The oldest file is $oldest_file"
+
+```
+NEW v1 (double check on ASUS!)
+```
+#!/bin/bash
+for arg in $*
+do
+ oldest=$1
+ if [[ $arg -ot $oldest ]]
+ then
+  oldest=$arg
+ fi
+done
+echo "the oldest file is '${oldest}'"
+
+New v2
+#!/bin/bash
+for arg in $*
+do
+ oldest=$1
+ if [[ $arg -ot $oldest ]]
+ then
+  oldest=$arg
+ fi
+done
+
+echo "Oldest file: $oldest"
 
 ```
 
