@@ -18,14 +18,14 @@ echo "The oldest file is: $oldest_file"
 #!/bin/bash
 if [ -f ~/funny.sh ];
 then
-        echo "This is funny";
+        echo "This is funny";Cancel Changes
 else
         echo "This is NOT funny";
 fi
 ```
 
 # Question 3
-**3a**. <i> Code overview: curl -O filename URL to Wünschiers book <i>
+**3a**. Code overview: curl -O filename URL_to_Wünschiers_book
 
 The curl command was used to since it can download files from a remote location, like a webpage!
 Additionally, I opted to use -O (vs -o) as it automatically saved case-cp.sh in my current working directory.
